@@ -4,15 +4,17 @@
         <meta name="viewport" content="with=device-width, intial-scale=1.0">
         <title>Acasă - The Forge Spirit</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="<link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <section class="header">
             <nav>
                 <a href="home.html"><img src="images/logo.png"></a>
-                <div class="nav-links">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="">Acasă</a></li>
                         <li><a href="">Proiecte</a></li>
@@ -21,6 +23,7 @@
                         <li><a href="">Contact</a></li>
                     </ul>
                 </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
 
             <div class="text-box">
@@ -31,6 +34,28 @@
 
         </section>
 
+
+<!------Despre noi------>
+
+
+
+
+
+
+
+<!------Toggle Menu------>
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
 
     </body>
 </html>
