@@ -524,3 +524,74 @@ h3{
 .fa-heart-o{
   color: #EA556F;
 }
+
+
+
+
+/* ------------------------------ Proiecte ----------------------------- */
+.sub-header{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Proiecte/images/proiecte-banner1.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.sub-header h1{
+  font-size: 62px;
+}
+
+.proiecte{
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.proiecte-col{
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+.proiecte-col img{
+  width: 100%;
+}
+.proiecte-col h1{
+  padding-top: 0;
+}
+.proiecte-col p{
+  padding: 15px 0 25px;
+}
+.proiecte-col-2{
+  text-align: right;
+}
+.proiecte-col ul{
+  padding: 15px 0 25px;
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.v2-btn{
+  border: 1px solid #EA556F;
+  background: transparent;
+  color: #EA556F;
+}
+.v2-btn:hover{
+  color: #fff;
+}
+
+.activitati{
+  width: 40%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.activitati h1{
+  padding-top: 50px;
+}
+.activitati p{
+  padding: 15px 0 25px;
+  /* text-align: justify; */
+}
