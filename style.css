@@ -115,3 +115,291 @@ nav .fa{
         padding: 30px;
     }
 }
+
+
+/* ------ Despre noi ------ */
+
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.about-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.about-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+/* ------ Centre ------ */
+
+.centre{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.centre-col{
+    flex-basis: 32%;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.centre-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(234,85,111,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 40%;
+    opacity: 1;
+}
+
+
+/* ------ Stats ------ */
+
+.stats{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.stats-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 100px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@property --num {
+    syntax: "<integer>";
+    initial-value: 41;
+    /* inherits: false; */
+  }
+  
+  .nr1 {
+    animation: counter1 5s ease-in-out;
+    counter-reset: num var(--num);
+    font: 800 40px system-ui;
+    padding: 5px;
+  }
+  .nr1::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter1 {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 41;
+    }
+  }
+
+
+  @property --num {
+    syntax: "<integer>";
+    initial-value: 116;
+    inherits: false;
+  }
+  
+  .nr2 {
+    animation: counter2 5s ease-in-out;
+    counter-reset: num var(--num);
+    font: 800 40px system-ui;
+    padding: 5px;
+  }
+  .nr2::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter2 {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 116;
+    }
+  }
+
+
+  @property --num {
+    syntax: "<integer>";
+    initial-value: 19360;
+    inherits: false;
+  }
+  
+  .nr3 {
+    animation: counter3 5s ease-in-out;
+    counter-reset: num var(--num);
+    font: 800 40px system-ui;
+    padding: 5px;
+  }
+  .nr3::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter3 {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 19360;
+    }
+  }
+
+
+  @property --num {
+    syntax: "<integer>";
+    initial-value: 1155;
+    inherits: false;
+  }
+  
+  .nr4 {
+    animation: counter4 5s ease-in-out;
+    counter-reset: num var(--num);
+    font: 800 40px system-ui;
+    padding: 5px;
+  }
+  .nr4::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter4 {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 1155;
+    }
+  }
+
+
+  @property --num {
+    syntax: "<integer>";
+    initial-value: 20;
+    inherits: false;
+  }
+  
+  .nr5 {
+    animation: counter5 5s ease-in-out;
+    counter-reset: num var(--num);
+    font: 800 40px system-ui;
+    padding: 5px;
+  }
+  .nr5::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter5 {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 20;
+    }
+  }
+
+
+  @property --num {
+    syntax: "<integer>";
+    initial-value: 40;
+    inherits: true;
+  }
+  
+  .nr6 {
+    animation: counter6 5s ease-in-out;
+    counter-reset: num var(--num);
+    font: 800 40px system-ui;
+    padding: 5px;
+  }
+  .nr6::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter6 {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 40;
+    }
+  }
