@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, intial-scale=1.0" />
+    <title>Contact - The Forge Spirit</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="../images/logo.png" />
+  </head>
+  <body>
+    <section class="sub-header-contact">
+      <nav>
+        <a href="../home.html"><img src="../images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="../home.html">Acasă</a></li>
+            <li><a href="../Proiecte/proiecte.html">Proiecte</a></li>
+            <li><a href="../EduFit/edufit.html">EduFit</a></li>
+            <li><a href="../Echipa/echipa.html">Echipa</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Contactează-ne</h1>
+    </section>
+
+    <!------ Contact ------>
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2847.2870622788932!2d26.0938774!3d44.4682883!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b2020c5fbe6573%3A0xa1f27bbd9b583f0b!2sStrada%20Moliere%2012%2C%20Bucure%C8%99ti!5e0!3m2!1sro!2sro!4v1669594834278!5m2!1sro!2sro"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </section>
+
+    <section class="contact">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>Str. Moliere 12-14</h5>
+              <p>Cod poștal 011964, București, România</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+40 723 089 937</h5>
+              <p>Luni - Vineri: 09:00 - 18:00</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>contact@theforgespirit.ro</h5>
+              <p>Trimite-ne un mail cu întrebările tale</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="">
+            <input type="text" placeholder="Nume" required />
+            <input type="text" placeholder="Email" required />
+            <input type="text" placeholder="Subiect" required />
+            <textarea rows="8" placeholder="Mesaj" required></textarea>
+            <button type="submit" class="hero-btn v2-btn">
+              Trimite mesajul
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!------ Footer ------>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        The Forge Spirit este o asociatie non-profit care facilitează copiilor
+        și adolescenților descoperirea și creșterea<br />puterii personale prin
+        intermediul sportului.
+      </p>
+      <div class="icons">
+        <a href="https://www.facebook.com/TheForgeSpirit/"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.google.com/maps/place/Strada+Moliere+12,+Bucure%C8%99ti/@44.4682883,26.0938774,17z/data=!4m5!3m4!1s0x40b2020c5fbe6573:0xa1f27bbd9b583f0b!8m2!3d44.4682883!4d26.0938774"
+          ><i class="fa fa-map-marker"></i
+        ></a>
+        <a href="https://www.instagram.com/theforgespirit/"
+          ><i class="fa fa-instagram"></i
+        ></a>
+      </div>
+      <p>
+        © 2020 Toate drepturile rezervate. The FORGE Spirit<br />Drăgan Pavel -
+        Tema 2 TW <i class="fa fa-heart-o"></i>
+      </p>
+    </section>
+
+    <!------ Toggle Menu ------>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
